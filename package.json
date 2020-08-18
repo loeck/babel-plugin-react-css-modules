@@ -49,10 +49,10 @@
   ],
   "license": "BSD-3-Clause",
   "main": "dist/index.js",
-  "name": "@dr.pogodin/babel-plugin-react-css-modules",
+  "name": "@lohek/babel-plugin-react-css-modules",
   "repository": {
     "type": "git",
-    "url": "https://github.com/birdofpreyru/babel-plugin-react-css-modules"
+    "url": "https://github.com/loeck/babel-plugin-react-css-modules"
   },
   "scripts": {
     "build": "rm -fr ./dist && NODE_ENV=production babel ./src --out-dir ./dist --source-maps --copy-files && npm run build-helper",
@@ -61,5 +61,5 @@
     "lint": "eslint ./src",
     "test": "npm run lint && flow && jest"
   },
-  "version": "6.0.2"
+  "version": "6.0.3"
 }
