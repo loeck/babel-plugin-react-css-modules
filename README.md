@@ -2,8 +2,8 @@
 
 ![Master Build Status](https://img.shields.io/circleci/project/github/birdofpreyru/babel-plugin-react-css-modules/master.svg?label=master)
 ![Dev Build Status](https://img.shields.io/circleci/project/github/birdofpreyru/babel-plugin-react-css-modules/devel.svg?label=devel)
-![Latest NPM Release](https://img.shields.io/npm/v/@dr.pogodin/babel-plugin-react-css-modules.svg)
-![NPM Downloads](https://img.shields.io/npm/dm/@dr.pogodin/babel-plugin-react-css-modules.svg)
+![Latest NPM Release](https://img.shields.io/npm/v/@lohek/babel-plugin-react-css-modules.svg)
+![NPM Downloads](https://img.shields.io/npm/dm/@lohek/babel-plugin-react-css-modules.svg)
 
 _A customized fork of [https://www.npmjs.com/package/babel-plugin-react-css-modules](https://www.npmjs.com/package/babel-plugin-react-css-modules), upgraded to use latest versions of all dependencies, and compatible with the latest `css-loader`(v4+)._
 
@@ -179,7 +179,7 @@ Configure the options for the plugin within your `.babelrc` as follows:
 ```json
 {
   "plugins": [
-    ["@dr.pogodin/react-css-modules", {
+    ["@lohek/react-css-modules", {
       "option": "value"
     }]
   ]
@@ -264,7 +264,7 @@ To add support for different CSS syntaxes (e.g. SCSS), perform the following two
 
   > NOTE: [`postcss-nested`](https://github.com/postcss/postcss-nested) is added as an extra plugin for demonstration purposes only. It's not needed with [`postcss-scss`](https://github.com/postcss/postcss-scss) because SCSS already supports nesting.
 
-  Postcss plugins can have options specified by wrapping the name and an options object in an array inside your config: 
+  Postcss plugins can have options specified by wrapping the name and an options object in an array inside your config:
 
   ```json
     "plugins": [
@@ -291,7 +291,7 @@ The default `styleName` -> `className` transformation **will not** be affected b
 When `babel-plugin-react-css-modules` cannot resolve CSS module at a compile time, it imports a helper function (read [Runtime `styleName` resolution](#runtime-stylename-resolution)). Therefore, you must install `babel-plugin-react-css-modules` as a direct dependency of the project.
 
 ```bash
-npm install @dr.pogodin/babel-plugin-react-css-modules --save
+npm install @lohek/babel-plugin-react-css-modules --save
 ```
 
 
